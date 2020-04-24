@@ -1,0 +1,13 @@
+$colors: (
+    primary: teal,
+    primary-light: lighten(orange, 30%),
+    primary-dark: darken(teal, 40%),
+    accent: orange,
+    white: white,
+);
+
+$desktop: 840px;
+$shadows: drop-shadow(0 15px 30px rgba(0, 0, 200, 0.5));
+$boxShadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+$padding: 15px;
+$border: 15px;
