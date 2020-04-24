@@ -7,6 +7,7 @@ class App extends Component{
         <div>
             <h1>My React App!</h1>
             <img src={logo} />
+            <div className=""></div>
         </div>
         );
     }
