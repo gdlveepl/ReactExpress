@@ -11,13 +11,14 @@ module.exports = {
         rules:[
             {
                 test: /\.js$/,
-                exclude: /nodue_modules/,
+                exclude: /nodye_modules/,
                 use: {
                     loader: 'babel-loader'
                 }
             },
             {
                 test: /\main.scss$/,
+                exclude: /node_modules/,
                 use: [
                     {
                         loader:'style-loader'
@@ -29,13 +30,14 @@ module.exports = {
                         loader: 'sass-loader'
                     }
                 ]
+            },
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                exclude: /node_modules/,
+                use: [
+                    'file-loader'
+                ]
             }
-            // {
-            //     test: /\.scss$/,
-            //     use: [
-                    
-            //     ]
-            // }
         ]
     },
     plugins: [
